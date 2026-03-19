@@ -5,3 +5,4 @@ sum=num+num1
 print(sum)
 
 
+x=10
