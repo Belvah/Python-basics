@@ -12,5 +12,5 @@ def simple_division():
           print(f"Error: {number} is not valid")
      except Exception as e:
           print(f"Something went wrong: {e}")
-          
-    simple_division() #call the function
+
+simple_division() #call the function
