@@ -17,19 +17,15 @@ def run_quiz():
             "choices": {"A": "Mars", "B": "Saturn", "C": "Jupiter", "D": "Neptune"},
             "answer": "C"
         },
-    
     ]
 
-    # Shuffle the questions for a randomized order
     random.shuffle(questions)
 
     score = 0
     total = len(questions)
     valid_choices = {"A", "B", "C", "D"}
 
-    print("=" * 50)
-    print("   WELCOME TO THE QUIZ GAME!")
-    print("=" * 50)
+    print("WELCOME TO THE QUIZ GAME!")
     print(f"\nYou will be asked {total} questions.")
     print("Enter A, B, C, or D for your answer.\n")
 
@@ -48,30 +44,23 @@ def run_quiz():
                 print("Invalid input! Please enter A, B, C, or D.")
 
         if user_answer == q["answer"]:
-            print("✅ Correct!\n")
+            print("Correct!\n")
             score += 1
         else:
-            print(f"❌ Wrong! The correct answer was: {q['answer']}. {q['choices'][q['answer']]}\n")
+            print(f"Wrong! The correct answer was: {q['answer']}. {q['choices'][q['answer']]}\n")
 
-        print("-" * 50)
-
-    # Display final score and feedback
     percentage = (score / total) * 100
 
-    print("\n" + "=" * 50)
-    print("           QUIZ COMPLETE!")
-    print("=" * 50)
+    print("\nQUIZ COMPLETE!")
     print(f"\nYour Score: {score}/{total} ({percentage:.0f}%)")
 
     if percentage >= 80:
-        print("🌟 Excellent!")
+        print("Excellent!")
     elif percentage >= 50:
-        print("👍 Good job!")
+        print("Good job!")
     else:
-        print("📚 Try Again!")
+        print("Try Again!")
 
     print("\nThanks for playing!")
 
-
-# Run the quiz
 run_quiz()
