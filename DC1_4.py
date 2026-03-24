@@ -34,7 +34,7 @@ while True:
             if score >100 or score < 0:
                 return "Invalid score"
             
-        #conditional logic for grading A,B,C,D,F
+        #conditional logic for grading A,B,C,D,E
             elif score >= 90:
                 return 'A'
             elif score >= 80:
@@ -51,4 +51,4 @@ while True:
             grade=calculate_grade(user_score)
             print(f'Your grade is: {grade}')
         except ValueError:
-            print("Please enter a valid score.")
+            print("Please enter a valid")
