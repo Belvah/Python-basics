@@ -1,14 +1,13 @@
-# word='banana'
-# number='45'
-# print(type(number))
-# print(word[4])
-#  #prints the 4th index of the word 'banana' which is 'n'
-# print(word[2.5])
-# #prints the length of the word 'banana' which is 6
-# #To get last index of the word we can use -1
-# print(len(word))
-# last_index=len(word)-1
-# print(word[last_index])
+word='banana'
+number='45'
+print(type(number))
+print(word[4])
+#prints the 4th index of the word 'banana' which is 'n'
+print(word[2.5])
+#prints the length of the word 'banana' which is 6
+print(len(word))
+last_index=len(word)-1
+print(word[last_index])
 
 #Slicing-creates a substring
 #[starting: stopping:]
